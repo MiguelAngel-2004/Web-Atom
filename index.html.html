@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Montajes Industriales Atom - Instalaciones electricas, energia solar y mantenimiento en toda la peninsula.">
+  <title>Montajes Industriales Atom | Profesionales en Electricidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo-link">
+        <img src="logo.png" alt="ATOM" class="logo-img">
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#contacto" class="nav-link nav-cta">Contactar</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="inicio" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-bolt">&#9889;</span>
+        Instalaciones Electricas Profesionales
+      </div>
+      <h1 class="hero-title reveal">
+        Energia que<br>
+        <span class="title-gradient">mueve el mundo</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Expertos en instalaciones electricas, energia solar y mantenimiento.<br>
+        Trabajamos en toda la peninsula.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#servicios" class="btn btn-primary">
+          <i class="fas fa-bolt"></i> Nuestros Servicios
+        </a>
+        <a href="#contacto" class="btn btn-outline">
+          <i class="fas fa-phone"></i> Contactar
+        </a>
+      </div>
+      <div class="hero-logo-wrap reveal">
+        <img src="logo.png" alt="Montajes Industriales Atom" class="hero-logo"
+             onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TICKER ═══════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span><i class="fas fa-bolt"></i>&nbsp;Instalaciones Electricas</span>
+      <span><i class="fas fa-solar-panel"></i>&nbsp;Energia Solar</span>
+      <span><i class="fas fa-tools"></i>&nbsp;Mantenimiento</span>
+      <span><i class="fas fa-lightbulb"></i>&nbsp;Iluminacion LED</span>
+      <span><i class="fas fa-plug"></i>&nbsp;Cuadros Electricos</span>
+      <span><i class="fas fa-car"></i>&nbsp;Cargadores Coches Electricos</span>
+      <span><i class="fas fa-home"></i>&nbsp;Instalaciones Domesticas</span>
+      <span><i class="fas fa-industry"></i>&nbsp;Instalaciones Industriales</span>
+      <span><i class="fas fa-bolt"></i>&nbsp;Instalaciones Electricas</span>
+      <span><i class="fas fa-solar-panel"></i>&nbsp;Energia Solar</span>
+      <span><i class="fas fa-tools"></i>&nbsp;Mantenimiento</span>
+      <span><i class="fas fa-lightbulb"></i>&nbsp;Iluminacion LED</span>
+      <span><i class="fas fa-plug"></i>&nbsp;Cuadros Electricos</span>
+      <span><i class="fas fa-car"></i>&nbsp;Cargadores Coches Electricos</span>
+      <span><i class="fas fa-home"></i>&nbsp;Instalaciones Domesticas</span>
+      <span><i class="fas fa-industry"></i>&nbsp;Instalaciones Industriales</span>
+    </div>
+  </div>
+
+  <!-- ═══════════ SERVICIOS ═══════════ -->
+  <section id="servicios" class="section services-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Que hacemos</span>
+        <h2 class="section-title">Nuestros <span class="text-gradient">Servicios</span></h2>
+        <p class="section-sub">Soluciones electricas completas para particulares, empresas e industrias.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="sc-glow glow-red"></div>
+          <div class="sc-icon icon-red"><i class="fas fa-bolt"></i></div>
+          <h3>Instalaciones Electricas</h3>
+          <p>Nuevas instalaciones y reformas en viviendas, locales y naves industriales con todos los permisos y certificaciones.</p>
+          <div class="sc-line line-red"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="sc-glow glow-yellow"></div>
+          <div class="sc-icon icon-yellow"><i class="fas fa-solar-panel"></i></div>
+          <h3>Energia Solar Fotovoltaica</h3>
+          <p>Instalacion de placas solares para autoconsumo y venta a la red. Ahorra en tu factura y cuida el planeta.</p>
+          <div class="sc-line line-yellow"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="sc-glow glow-green"></div>
+          <div class="sc-icon icon-green"><i class="fas fa-tools"></i></div>
+          <h3>Mantenimiento Electrico</h3>
+          <p>Servicio de mantenimiento preventivo y correctivo para garantizar el correcto funcionamiento de tus instalaciones.</p>
+          <div class="sc-line line-green"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="sc-glow glow-blue"></div>
+          <div class="sc-icon icon-blue"><i class="fas fa-lightbulb"></i></div>
+          <h3>Iluminacion LED</h3>
+          <p>Proyectos de iluminacion eficiente con tecnologia LED para interiores, exteriores, naves y locales comerciales.</p>
+          <div class="sc-line line-blue"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="sc-glow glow-red"></div>
+          <div class="sc-icon icon-red"><i class="fas fa-plug"></i></div>
+          <h3>Cuadros Electricos</h3>
+          <p>Instalacion, revision y sustitucion de cuadros electricos. Cumplimiento total con la normativa vigente (REBT).</p>
+          <div class="sc-line line-red"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="sc-glow glow-yellow"></div>
+          <div class="sc-icon icon-yellow"><i class="fas fa-project-diagram"></i></div>
+          <h3>Lineas Electricas</h3>
+          <p>Instalacion, reparacion y mantenimiento de lineas electricas para transporte y distribucion de energia electrica.</p>
+          <div class="sc-line line-yellow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STATS ═══════════ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-icon si-red"><i class="fas fa-calendar-alt"></i></div>
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Anos de experiencia</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-icon si-yellow"><i class="fas fa-hard-hat"></i></div>
+          <div class="stat-number" data-target="800" data-suffix="+">0</div>
+          <div class="stat-label">Proyectos completados</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-icon si-green"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Clientes satisfechos</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-icon si-blue"><i class="fas fa-star"></i></div>
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Satisfaccion garantizada</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ NOSOTROS ═══════════ -->
+  <section id="nosotros" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="electric-orb">
+            <div class="orb-ring ring-1"></div>
+            <div class="orb-ring ring-2"></div>
+            <div class="orb-ring ring-3"></div>
+            <div class="orb-core"><i class="fas fa-bolt"></i></div>
+          </div>
+          <div class="about-badge ab-1"><i class="fas fa-certificate"></i> Empresa Certificada</div>
+          <div class="about-badge ab-2"><i class="fas fa-leaf"></i> Energia Limpia</div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">Quienes somos</span>
+          <h2 class="section-title">Montajes Industriales <span class="text-gradient">Atom</span></h2>
+          <p>Somos una empresa de instalaciones electricas con base en <strong>Ossa de Montiel (Albacete)</strong>, con mas de 15 anos de experiencia ofreciendo soluciones electricas de calidad a particulares, comunidades y empresas en toda la peninsula.</p>
+          <p>Nuestro equipo de profesionales cualificados trabaja con los mas altos estandares de seguridad y eficiencia, garantizando instalaciones que cumplen toda la normativa vigente.</p>
+          <div class="about-features">
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>Instaladores certificados y homologados</span></div>
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>Materiales de primera calidad</span></div>
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>Presupuesto gratuito sin compromiso</span></div>
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>Garantia en todas las instalaciones</span></div>
+          </div>
+          <a href="#contacto" class="btn btn-primary" style="margin-top:1.5rem; display:inline-flex;">
+            <i class="fas fa-arrow-right"></i> Contacta con nosotros
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROYECTOS ═══════════ -->
+  <section id="proyectos" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestro trabajo</span>
+        <h2 class="section-title">Areas de <span class="text-gradient">Actuacion</span></h2>
+        <p class="section-sub">Trabajamos en todo tipo de proyectos electricos</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="pc-icon pi-red"><i class="fas fa-home"></i></div>
+          <h3>Residencial</h3>
+          <ul>
+            <li>Nuevas viviendas</li>
+            <li>Reformas integrales</li>
+            <li>Garajes y trasteros</li>
+            <li>Instalaciones exteriores</li>
+          </ul>
+        </div>
+        <div class="project-card reveal featured-project">
+          <div class="fp-badge">&#9889; Mas solicitado</div>
+          <div class="pc-icon pi-yellow"><i class="fas fa-solar-panel"></i></div>
+          <h3>Solar Fotovoltaica</h3>
+          <ul>
+            <li>Autoconsumo domestico</li>
+            <li>Instalaciones agricolas</li>
+            <li>Empresas y naves</li>
+            <li>Tramitacion de subvenciones</li>
+          </ul>
+        </div>
+        <div class="project-card reveal">
+          <div class="pc-icon pi-blue"><i class="fas fa-industry"></i></div>
+          <h3>Industrial</h3>
+          <ul>
+            <li>Naves industriales</li>
+            <li>Cuadros de control</li>
+            <li>Automatizacion</li>
+            <li>Mantenimiento industrial</li>
+          </ul>
+        </div>
+        <div class="project-card reveal">
+          <div class="pc-icon pi-green"><i class="fas fa-project-diagram"></i></div>
+          <h3>Lineas Electricas</h3>
+          <ul>
+            <li>Lineas de alta tension</li>
+            <li>Lineas de baja tension</li>
+            <li>Reparacion y mantenimiento</li>
+            <li>Conexiones especiales</li>
+          </ul>
+        </div>
+        <div class="project-card reveal">
+          <div class="pc-icon pi-red"><i class="fas fa-car"></i></div>
+          <h3>Cargadores Electricos</h3>
+          <ul>
+            <li>Instalacion de puntos de carga</li>
+            <li>Cargadores domesticos</li>
+            <li>Cargadores publicos</li>
+            <li>Integracion con sistemas inteligentes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ POR QUE ═══════════ -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestra garantia</span>
+        <h2 class="section-title">Por que elegir <span class="text-gradient">ATOM</span>?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Seguridad Total</h3>
+          <p>Todas nuestras instalaciones cumplen el Reglamento Electrotecnico de Baja Tension (REBT) y normativas vigentes.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3>Puntualidad</h3>
+          <p>Respetamos los plazos acordados. Tu tiempo es valioso y nos comprometemos a cumplir cada fecha prometida.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon"><i class="fas fa-euro-sign"></i></div>
+          <h3>Precio Justo</h3>
+          <p>Presupuestos detallados y sin sorpresas. Calidad profesional a precios competitivos y justos.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>Soporte Continuo</h3>
+          <p>Atencion al cliente antes, durante y despues de la instalacion. Disponibles para consultas y dudas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACTO ═══════════ -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Hablemos</span>
+        <h2 class="section-title">Contacta con <span class="text-gradient">nosotros</span></h2>
+        <p class="section-sub">Cuentanos tu proyecto y te respondemos en menos de 24 horas.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Direccion</strong>
+              <p>Calle Juan Chaleco N&#186; 33<br>02611 Ossa de Montiel, Albacete</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <strong>Telefono</strong>
+              <p><a href="tel:+34649757473">649 757 473</a></p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:electrotex@electrotex.es">electrotex@electrotex.es</a></p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Horario</strong>
+              <p>Lun-Vie: 8:00 - 20:00<br>Disponibles para proyectos especiales</p>
+            </div>
+          </div>
+          <a href="https://wa.me/34649757473" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre *</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label>Telefono *</label>
+                <input type="tel" id="telefono" placeholder="Tu telefono" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Servicio</label>
+              <select id="servicio">
+                <option value="" disabled selected>Que necesitas?</option>
+                <option>Instalacion electrica nueva</option>
+                <option>Energia solar fotovoltaica</option>
+                <option>Mantenimiento electrico</option>
+                <option>Iluminacion LED</option>
+                <option>Cuadro electrico</option>
+                <option>Urgencia / Averia</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea id="mensaje" rows="4" placeholder="Cuentanos tu proyecto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar consulta
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <strong>Mensaje enviado!</strong>
+              <p>Te contactamos en menos de 24 horas.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="ATOM" class="footer-logo"
+               onerror="this.style.display='none';document.getElementById('ftxt').style.display='flex'">
+          <div class="logo-text" id="ftxt" style="display:none;margin-bottom:1rem">
+            <span class="lt-a">A</span><span class="lt-bolt">&#9889;</span><span class="lt-tom">TOM</span>
+          </div>
+          <p>Instalaciones electricas profesionales de Montajes Industriales Atom en toda la peninsula.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="#servicios">Instalaciones electricas</a>
+          <a href="#servicios">Energia solar</a>
+          <a href="#servicios">Mantenimiento</a>
+          <a href="#servicios">Iluminacion LED</a>
+
+        </div>
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <a href="#nosotros">Quienes somos</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p><i class="fas fa-map-marker-alt"></i> C/ Juan Chaleco N&#186; 33, 02611 Ossa de Montiel</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+34649757473">649 757 473</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:electrotex@electrotex.es">electrotex@electrotex.es</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Montajes Industriales Atom &bull; Ossa de Montiel, Albacete</p>
+        <div class="footer-bolts">&#9889; &#9889; &#9889;</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+34649757473" class="float-call" aria-label="Llamar ahora">
+    <i class="fas fa-phone"></i><span>Llamar</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
