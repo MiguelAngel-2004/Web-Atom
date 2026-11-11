@@ -89,12 +89,14 @@
       <span></span><span></span>
     </button>
   </div>
+  <div class="brand-stripe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 </header>
 
 <main id="main">
 
 <!-- Portada -->
 <section class="hero" id="top">
+  <div class="hero-line" id="hero-line" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-text">
       <p class="kicker">Empresa instaladora autorizada · Desde 1999</p>
@@ -105,15 +107,15 @@
         Con equipo propio y desde Ossa de Montiel para Castilla-La Mancha y provincias limítrofes.
       </p>
       <div class="hero-actions">
-        <a href="#contacto" class="btn btn-primary">Pedir presupuesto</a>
+        <a href="#contacto" class="btn btn-primary">Pedir presupuesto <span class="arr" aria-hidden="true">→</span></a>
         <a href="#servicios" class="btn btn-outline-light">Ver servicios</a>
       </div>
     </div>
 
     <dl class="hero-facts">
       <div><dt>Desde</dt><dd>1999</dd></div>
-      <div><dt>Obras ejecutadas</dt><dd>+300</dd></div>
-      <div><dt>Provincias</dt><dd>8</dd></div>
+      <div><dt>Obras ejecutadas</dt><dd>+<span data-count="300">300</span></dd></div>
+      <div><dt>Provincias</dt><dd><span data-count="8">8</span></dd></div>
       <div><dt>Sistemas de gestión</dt><dd class="dd-sm">ISO 9001<br />ISO 14001</dd></div>
     </dl>
   </div>
@@ -128,32 +130,32 @@
     </header>
 
     <ol class="services">
-      <li>
+      <li style="--c:var(--red)">
         <span class="num">01</span>
         <h3>Líneas de alta y media tensión</h3>
         <p>Líneas aéreas y subterráneas, entronques, desvíos y soterramientos. Trabajos en tensión coordinados con la distribuidora.</p>
       </li>
-      <li>
+      <li style="--c:var(--blue)">
         <span class="num">02</span>
         <h3>Centros de transformación</h3>
         <p>Centros de obra civil, prefabricados e intemperie. Montaje, aparamenta, puesta a tierra y puesta en servicio.</p>
       </li>
-      <li>
+      <li style="--c:var(--gold)">
         <span class="num">03</span>
         <h3>Redes urbanas MT/BT y alumbrado</h3>
         <p>Redes de distribución para urbanizaciones y polígonos. Alumbrado público y renovación a LED para municipios.</p>
       </li>
-      <li>
+      <li style="--c:var(--navy)">
         <span class="num">04</span>
         <h3>Instalaciones industriales</h3>
         <p>Cuadros generales y de control, acometidas, naves, plantas de proceso y automatización.</p>
       </li>
-      <li>
+      <li style="--c:var(--blue)">
         <span class="num">05</span>
         <h3>Fibra óptica</h3>
         <p>Tendido y fusionado de fibra en canalización y aérea para operadores, industria y entornos rurales.</p>
       </li>
-      <li>
+      <li style="--c:var(--green)">
         <span class="num">06</span>
         <h3>Mantenimiento</h3>
         <p>Mantenimiento preventivo y correctivo de centros de transformación e instalaciones de clientes. Servicio de urgencias para clientes con contrato.</p>
@@ -176,9 +178,20 @@
       <p class="lead-light">
         También preparamos la documentación para solicitar las ayudas a la movilidad eléctrica que estén en vigor.
       </p>
-      <a href="#contacto" class="btn btn-primary">Consultar un proyecto</a>
+      <a href="#contacto" class="btn btn-primary">Consultar un proyecto <span class="arr" aria-hidden="true">→</span></a>
     </div>
 
+    <div>
+    <div class="charge" id="charge">
+      <div class="charge-top">
+        <span>Recarga rápida · 150 kW</span>
+        <span class="charge-pct"><span id="charge-pct">20</span>%</span>
+      </div>
+      <div class="charge-bar"><div class="charge-fill"></div></div>
+      <div class="charge-foot">
+        <span>20 %</span><span>80 % en unos 20 min*</span>
+      </div>
+    </div>
     <ul class="checklist">
       <li><strong>Potencias de 22 a 350 kW</strong> en corriente continua y alterna</li>
       <li><strong>Conectores CCS2, CHAdeMO y Tipo 2</strong></li>
@@ -187,6 +200,8 @@
       <li><strong>Obra civil y señalización</strong> de plazas</li>
       <li><strong>Legalización</strong> ante Industria y la distribuidora</li>
     </ul>
+    <p class="fineprint">*Tiempo orientativo; depende del vehículo y de la batería.</p>
+    </div>
   </div>
 </section>
 
@@ -204,12 +219,12 @@
           <tr><th>Año</th><th>Obra</th><th>Ubicación</th><th>Alcance</th></tr>
         </thead>
         <tbody>
-          <tr><td>2024</td><td>Estación de recarga en autovía A-31</td><td>Albacete</td><td>8 puntos de recarga e instalación fotovoltaica</td></tr>
-          <tr><td>2024</td><td>Hub de recarga urbano</td><td>Albacete</td><td>4 cargadores de 150 kW y centro de transformación</td></tr>
-          <tr><td>2023</td><td>Línea aérea de 132 kV</td><td>La Mancha</td><td>8 km de tendido</td></tr>
-          <tr><td>2023</td><td>Centro logístico</td><td>Toledo</td><td>Instalación eléctrica completa, 15.000 m²</td></tr>
-          <tr><td>2022</td><td>Subestación 66/20 kV</td><td>Murcia</td><td>Montaje y puesta en servicio</td></tr>
-          <tr><td>2022</td><td>Renovación de red MT/BT</td><td>Municipio de 12.000 hab.</td><td>Red subterránea de distribución</td></tr>
+          <tr><td>2024</td><td>Estación de recarga en autovía A-31 <span class="tag tag-ve">Recarga VE</span></td><td>Albacete</td><td>8 puntos de recarga e instalación fotovoltaica</td></tr>
+          <tr><td>2024</td><td>Hub de recarga urbano <span class="tag tag-ve">Recarga VE</span></td><td>Albacete</td><td>4 cargadores de 150 kW y centro de transformación</td></tr>
+          <tr><td>2023</td><td>Línea aérea de 132 kV <span class="tag tag-at">Alta tensión</span></td><td>La Mancha</td><td>8 km de tendido</td></tr>
+          <tr><td>2023</td><td>Centro logístico <span class="tag tag-ind">Industrial</span></td><td>Toledo</td><td>Instalación eléctrica completa, 15.000 m²</td></tr>
+          <tr><td>2022</td><td>Subestación 66/20 kV <span class="tag tag-at">Alta tensión</span></td><td>Murcia</td><td>Montaje y puesta en servicio</td></tr>
+          <tr><td>2022</td><td>Renovación de red MT/BT <span class="tag tag-red">Redes</span></td><td>Municipio de 12.000 hab.</td><td>Red subterránea de distribución</td></tr>
         </tbody>
       </table>
     </div>
@@ -231,6 +246,8 @@
         trabajos en altura y tendido de líneas. Eso nos permite cumplir plazos y responder rápido
         cuando hay una avería.
       </p>
+
+      <p class="zones"><span>Zona de trabajo</span> Albacete · Ciudad Real · Cuenca · Toledo · Guadalajara · Murcia · Valencia</p>
 
       <h3 class="h-small">Cómo trabajamos</h3>
       <ol class="steps">
@@ -262,6 +279,17 @@
       </ul>
       <p class="note">Certificados disponibles bajo petición.</p>
     </aside>
+  </div>
+</section>
+
+<!-- Llamada a la acción -->
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <p class="cta-text"><strong>¿Tienes una obra en marcha?</strong> Vamos a verla y te pasamos presupuesto sin compromiso.</p>
+    <div class="cta-actions">
+      <a href="tel:+34649757473" class="cta-phone">649 757 473</a>
+      <a href="#contacto" class="btn btn-light">Escribirnos <span class="arr" aria-hidden="true">→</span></a>
+    </div>
   </div>
 </section>
 
