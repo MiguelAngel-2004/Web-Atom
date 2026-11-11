@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Instalaciones Eléctricas Industriales en España | ATOM Montajes</title>
+  <meta name="description" content="Empresa especializada en instalaciones eléctricas industriales, alta tensión y electrogasolineras. ISO 9001 · ISO 14001 · Instalador Autorizado. Ossa de Montiel, Albacete." />
+  <meta name="keywords" content="instalaciones eléctricas industriales, alta tensión, electrogasolineras, montajes eléctricos, ISO 9001, Albacete, España" />
+  <link rel="canonical" href="https://www.atomelectricidad.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="ATOM Montajes Industriales — Electricidad Industrial" />
+  <meta property="og:description" content="Especialistas en alta tensión, electrogasolineras y montajes eléctricos. ISO 9001 · ISO 14001." />
+  <meta property="og:image"       content="logo.png" />
+  <meta property="og:url"         content="https://www.atomelectricidad.es/" />
+  <meta property="og:locale"      content="es_ES" />
+
+  <!-- Técnico -->
+  <meta name="theme-color" content="#003087" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Recursos críticos: preload -->
+  <link rel="preload" as="image" href="logo.png" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Fuentes: solo Orbitron + Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CDN (solo para utilidades de grid/spacing no cubiertas por CSS custom) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'atom-red':   '#E30613',
+          'atom-blue':  '#003087',
+          'atom-green': '#009A44',
+          'atom-gold':  '#F5C400',
+          'atom-dark':  '#0d0f1a',
+        },
+        fontFamily: {
+          orbitron: ['Orbitron', 'sans-serif'],
+          inter:    ['Inter',    'sans-serif'],
+        }
+      }}
+    };
+  </script>
+
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ElectricalContractor",
+    "name": "Montajes Industriales ATOM",
+    "image": "https://www.atomelectricidad.es/logo.png",
+    "telephone": "+34649757473",
+    "email": "electrotex@electrotex.es",
+    "url": "https://www.atomelectricidad.es",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vallejo Hondo, 4",
+      "addressLocality": "Ossa de Montiel",
+      "postalCode": "02611",
+      "addressRegion": "Albacete",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.5966,
+      "longitude": -2.7338
+    },
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "priceRange": "€€",
+    "areaServed": ["Albacete","Ciudad Real","Murcia","Toledo","Cuenca","Guadalajara","Valencia"],
+    "hasCredential": ["ISO 9001:2015","ISO 14001:2015","Instalador Autorizado Categoría Especial"]
+  }
+  </script>
+</head>
+
+<body class="bg-white text-atom-dark font-inter overflow-x-hidden">
+
+<!-- ============================================================
+     LOADER
+     ============================================================ -->
+<div id="loader" role="status" aria-label="Cargando la página">
+  <img src="logo.png" class="loader-logo" alt="ATOM Montajes" />
+  <div class="loader-track">
+    <div class="loader-bar"></div>
+  </div>
+  <p class="loader-text">Cargando...</p>
+</div>
+
+<!-- Cursor personalizado (solo desktop) -->
+<div id="cursor"          aria-hidden="true"></div>
+<div id="cursor-follower" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav id="navbar" aria-label="Navegación principal">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="#hero" aria-label="Ir al inicio — ATOM Montajes">
+      <img src="logo.png" class="nav-logo" alt="Montajes Industriales ATOM" />
+    </a>
+
+    <!-- Links desktop — nav-links se oculta en mobile via CSS -->
+    <div class="nav-links">
+      <a href="#about"              class="nav-link">Nosotros</a>
+      <a href="#services"           class="nav-link">Servicios</a>
+      <a href="#electrogasolineras" class="nav-link">Electrogasolineras</a>
+      <a href="#certificaciones"    class="nav-link">Certificaciones</a>
+      <a href="#portfolio"          class="nav-link">Proyectos</a>
+      <a href="#contact"            class="nav-link">Contacto</a>
+    </div>
+
+    <!-- Teléfono + CTA desktop -->
+    <div class="nav-right">
+      <a href="tel:+34649757473" class="nav-phone" aria-label="Llamar al 649 757 473">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        649 757 473
+      </a>
+      <a href="#contact" class="btn btn-red btn-sm">
+        <i class="fas fa-bolt" aria-hidden="true"></i>
+        Presupuesto
+      </a>
+    </div>
+
+    <!-- Hamburger mobile -->
+    <button
+      id="burger"
+      class="hamburger"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false"
+      aria-controls="mobile-overlay"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Menú móvil (overlay) -->
+<div
+  id="mobile-overlay"
+  class="mobile-overlay"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Menú de navegación"
+>
+  <div class="max-w-sm w-full">
+    <img src="logo.png" alt="ATOM" class="h-10 mb-8" />
+    <a href="#about"              class="mobile-nav-link">Nosotros</a>
+    <a href="#services"           class="mobile-nav-link">Servicios</a>
+    <a href="#electrogasolineras" class="mobile-nav-link">Electrogasolineras</a>
+    <a href="#certificaciones"    class="mobile-nav-link">Certificaciones</a>
+    <a href="#medioambiente"      class="mobile-nav-link">Medio Ambiente</a>
+    <a href="#portfolio"          class="mobile-nav-link">Proyectos</a>
+    <a href="#contact"            class="mobile-nav-link">Contacto</a>
+    <a href="tel:+34649757473" class="mobile-phone">
+      <i class="fas fa-phone" aria-hidden="true"></i>
+      649 757 473
+    </a>
+    <a href="#contact" class="btn btn-red btn-block mt-4">
+      <i class="fas fa-bolt" aria-hidden="true"></i>
+      Solicitar Presupuesto
+    </a>
+  </div>
+</div>
+
+<!-- ============================================================
+     HERO — split layout
+     ============================================================ -->
+<section id="hero" class="hero-section" aria-labelledby="hero-heading">
+  <!-- Capas decorativas de fondo -->
+  <div class="hero-mesh" aria-hidden="true"></div>
+
+  <!-- Grid perspectiva 3D animado -->
+  <div class="hero-persp-grid" aria-hidden="true">
+    <div class="persp-grid-inner"></div>
+  </div>
+
+  <!-- Formas geométricas 3D flotantes -->
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="geo geo-hex  geo-1"></div>
+    <div class="geo geo-tri  geo-2"></div>
+    <div class="geo geo-hex  geo-3"></div>
+    <div class="geo geo-ring geo-4"></div>
+    <div class="geo geo-diam geo-5"></div>
+    <div class="geo geo-tri  geo-6"></div>
+    <div class="geo geo-ring geo-7"></div>
+  </div>
+
+  <div class="hero-inner">
+
+    <!-- Texto — izquierda en desktop, arriba en mobile -->
+    <div class="hero-content-side">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+        <span class="hero-eyebrow-text">Instalador Autorizado · España</span>
+      </div>
+
+      <h1 id="hero-heading" class="hero-title">
+        La empresa eléctrica<br />
+        de referencia en<br />
+        <span class="ht-accent">Castilla-La Mancha</span>
+      </h1>
+
+      <p class="hero-desc">
+        Diseñamos, instalamos y mantenemos infraestructuras eléctricas industriales desde 1999.
+        Más de 300 proyectos completados con excelencia certificada.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-red btn-lg">
+          <i class="fas fa-bolt" aria-hidden="true"></i>
+          Solicitar presupuesto
+        </a>
+        <a href="#about" class="btn btn-ghost btn-lg">
+          Conocer ATOM
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Rating Google -->
+      <div class="hero-rating" aria-label="Valoración media: 4.9 de 5 estrellas — 87 reseñas en Google">
+        <span class="hero-rating-stars" aria-hidden="true">★★★★★</span>
+        <span class="hero-rating-score">4.9</span>
+        <span class="hero-rating-sep"  aria-hidden="true"></span>
+        <span class="hero-rating-count">87 reseñas Google</span>
+        <span class="hero-rating-sep"  aria-hidden="true"></span>
+        <span class="hero-rating-count">+25 años de experiencia</span>
+      </div>
+    </div>
+
+    <!-- Visual orbital — derecha en desktop, abajo en mobile -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-glow"></div>
+
+      <!-- Órbitas: animadas solo con CSS (no JS), el CONTENEDOR se mueve con el ratón -->
+      <div class="hv-orbit hv-orbit-1">
+        <div class="hv-dot hv-dot-red"></div>
+      </div>
+      <div class="hv-orbit hv-orbit-2">
+        <div class="hv-dot hv-dot-green"></div>
+      </div>
+      <div class="hv-orbit hv-orbit-3">
+        <div class="hv-dot hv-dot-gold"></div>
+      </div>
+
+      <!-- Logo central -->
+      <div class="hv-center">
+        <img src="logo.png" class="hv-logo" alt="" />
+      </div>
+
+      <!-- Datos flotantes -->
+      <div class="hv-float hv-float-1">
+        <span class="hv-float-val">300+</span>
+        <span class="hv-float-lbl">Proyectos</span>
+      </div>
+      <div class="hv-float hv-float-2">
+        <span class="hv-float-val">ISO<br />9001</span>
+        <span class="hv-float-lbl">Certificado</span>
+      </div>
+      <div class="hv-float hv-float-3">
+        <span class="hv-float-val">25+</span>
+        <span class="hv-float-lbl">Años</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Franja de colores del logo en la parte inferior -->
+  <div class="hero-stripe" aria-hidden="true"></div>
+
+  <!-- Indicador de scroll -->
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down scroll-chevron"></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR
+     ============================================================ -->
+<aside class="trust-bar" aria-label="Credenciales de la empresa">
+  <div class="trust-inner">
+
+    <div class="trust-item">
+      <div class="trust-icon" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+        <i class="fas fa-calendar-check" aria-hidden="true"></i>
+      </div>
+      <div>
+        <div class="trust-text">Desde 1999</div>
+        <div class="trust-sub">+25 años de experiencia</div>
+      </div>
+    </div>
+
+    <div class="trust-sep" aria-hidden="true"></div>
+
+    <div class="trust-item">
+      <div class="trust-icon" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+        <i class="fas fa-certificate" aria-hidden="true"></i>
+      </div>
+      <div>
+        <div class="trust-text">ISO 9001 · ISO 14001</div>
+        <div class="trust-sub">Calidad y medioambiente</div>
+      </div>
+    </div>
+
+    <div class="trust-sep" aria-hidden="true"></div>
+
+    <div class="trust-item">
+      <div class="trust-icon" style="background:var(--clr-green-alpha);color:var(--clr-green)">
+        <i class="fas fa-charging-station" aria-hidden="true"></i>
+      </div>
+      <div>
+        <div class="trust-text">Electrogasolineras</div>
+        <div class="trust-sub">Especialistas en recarga EV</div>
+      </div>
+    </div>
+
+    <div class="trust-sep" aria-hidden="true"></div>
+
+    <div class="trust-item">
+      <div class="trust-icon" style="background:var(--clr-gold-alpha);color:var(--clr-gold-dark)">
+        <i class="fas fa-star" aria-hidden="true"></i>
+      </div>
+      <div>
+        <div class="trust-text">4.9 / 5 estrellas</div>
+        <div class="trust-sub">87 reseñas verificadas</div>
+      </div>
+    </div>
+
+    <div class="trust-sep" aria-hidden="true"></div>
+
+    <div class="trust-item">
+      <div class="trust-icon" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+        <i class="fas fa-map-location-dot" aria-hidden="true"></i>
+      </div>
+      <div>
+        <div class="trust-text">Cobertura nacional</div>
+        <div class="trust-sub">+8 provincias cubiertas</div>
+      </div>
+    </div>
+
+  </div>
+</aside>
+
+<!-- ============================================================
+     SOBRE NOSOTROS
+     ============================================================ -->
+<section id="about" class="py-section-lg" style="background:var(--bg-1)">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-2 gap-14 items-start">
+
+      <!-- Tarjeta visual -->
+      <div class="about-card">
+        <div class="about-card-header">
+          <!-- Logo en dark header — mantiene colores reales (sin filter invert) -->
+          <img src="logo.png" class="about-logo" alt="ATOM Montajes Industriales" />
+        </div>
+        <div class="about-kpis">
+          <div class="about-kpi">
+            <div class="kpi-val" style="color:var(--clr-red)">25+</div>
+            <div class="kpi-key">Años de<br />experiencia</div>
+          </div>
+          <div class="about-kpi">
+            <div class="kpi-val" style="color:var(--clr-blue)">300+</div>
+            <div class="kpi-key">Proyectos<br />realizados</div>
+          </div>
+          <div class="about-kpi">
+            <div class="kpi-val" style="color:var(--clr-green)">8</div>
+            <div class="kpi-key">Provincias<br />cubiertas</div>
+          </div>
+        </div>
+        <div class="about-tags">
+          <span class="tag" style="background:var(--clr-red-alpha);color:var(--clr-red)">Alta Tensión</span>
+          <span class="tag" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">Baja Tensión</span>
+          <span class="tag" style="background:var(--clr-green-alpha);color:var(--clr-green)">Electrogasolineras</span>
+          <span class="tag" style="background:var(--clr-gold-alpha);color:var(--clr-gold-dark)">Fibra Óptica</span>
+          <span class="tag" style="background:var(--clr-red-alpha);color:var(--clr-red)">Mantenimiento</span>
+        </div>
+      </div>
+
+      <!-- Descripción y features -->
+      <div>
+        <div class="section-label">
+          <span class="label-bar" style="background:var(--clr-red)"></span>
+          Quiénes somos
+        </div>
+        <h2 class="section-h2 mb-5">
+          Energía eléctrica industrial<br />
+          <span style="color:var(--clr-blue)">con más de 25 años</span><br />
+          de excelencia certificada
+        </h2>
+        <p class="section-lead mb-4">
+          Montajes Industriales ATOM nació en 1999 con un objetivo claro: ofrecer soluciones eléctricas industriales de la máxima calidad técnica. Hoy somos referentes en Castilla-La Mancha y nos expandimos a todo el territorio nacional.
+        </p>
+        <p class="section-lead mb-8" style="max-width:100%">
+          Contamos con un equipo de técnicos altamente cualificados y los más altos estándares de seguridad, avalados por nuestras certificaciones <strong>ISO 9001</strong> e <strong>ISO 14001</strong>.
+        </p>
+
+        <div class="feat-list">
+          <div class="feat">
+            <div class="feat-icon" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+              <i class="fas fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="feat-title">Seguridad certificada</div>
+              <div class="feat-desc">Instalador Autorizado Categoría Especial habilitado por el Ministerio de Industria. Cumplimos toda la normativa vigente.</div>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+              <i class="fas fa-microchip" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="feat-title">Tecnología avanzada</div>
+              <div class="feat-desc">Smart Grid, SCADA, automatización industrial. Soluciones técnicas preparadas para el futuro de la energía.</div>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon" style="background:var(--clr-green-alpha);color:var(--clr-green)">
+              <i class="fas fa-leaf" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="feat-title">Compromiso ambiental (ISO 14001)</div>
+              <div class="feat-desc">Gestión ambiental certificada. Promovemos la electrificación limpia y la reducción de la huella de carbono en cada proyecto.</div>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon" style="background:var(--clr-gold-alpha);color:var(--clr-gold-dark)">
+              <i class="fas fa-file-contract" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="feat-title">Servicio llave en mano</div>
+              <div class="feat-desc">Gestionamos todo: ingeniería, permisos, ejecución, legalización y puesta en marcha. Sin complicaciones para el cliente.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICIOS
+     ============================================================ -->
+<section id="services" class="py-section" style="background:var(--bg-0)">
+  <div class="wrap">
+
+    <div class="max-w-xl mb-12">
+      <div class="section-label">
+        <span class="label-bar" style="background:var(--clr-blue)"></span>
+        Qué hacemos
+      </div>
+      <h2 class="section-h2 mb-4">Nuestros <span style="color:var(--clr-red)">Servicios</span></h2>
+      <p class="section-lead">Soluciones eléctricas completas para la industria, el sector público y la movilidad sostenible.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="svc-card svc--red">
+        <div class="svc-icon" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+          <i class="fas fa-bolt-lightning" aria-hidden="true"></i>
+        </div>
+        <div class="svc-name">Líneas de Alta Tensión</div>
+        <p class="svc-desc">Diseño e instalación de líneas aéreas y subterráneas de alta y media tensión. Transporte y distribución eléctrica a escala industrial.</p>
+        <a href="#contact" class="svc-link" style="color:var(--clr-red)">
+          Solicitar info <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="svc-card svc--blue">
+        <div class="svc-icon" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+          <i class="fas fa-city" aria-hidden="true"></i>
+        </div>
+        <div class="svc-name">Instalaciones Urbanas MT/BT</div>
+        <p class="svc-desc">Redes de distribución urbana. Alumbrado público inteligente, centros de transformación y redes subterráneas de media y baja tensión.</p>
+        <a href="#contact" class="svc-link" style="color:var(--clr-blue)">
+          Solicitar info <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="svc-card svc--blue">
+        <div class="svc-icon" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+          <i class="fas fa-network-wired" aria-hidden="true"></i>
+        </div>
+        <div class="svc-name">Fibra Óptica</div>
+        <p class="svc-desc">Instalación de redes de fibra óptica para telecomunicaciones industriales, ciudades inteligentes y entornos rurales.</p>
+        <a href="#contact" class="svc-link" style="color:var(--clr-blue)">
+          Solicitar info <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="svc-card svc--red">
+        <div class="svc-icon" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+          <i class="fas fa-screwdriver-wrench" aria-hidden="true"></i>
+        </div>
+        <div class="svc-name">Mantenimiento Eléctrico</div>
+        <p class="svc-desc">Mantenimiento preventivo y correctivo de instalaciones eléctricas industriales. Respuesta rápida y equipos especializados disponibles.</p>
+        <a href="#contact" class="svc-link" style="color:var(--clr-red)">
+          Solicitar info <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="svc-card svc--blue">
+        <div class="svc-icon" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+          <i class="fas fa-industry" aria-hidden="true"></i>
+        </div>
+        <div class="svc-name">Infraestructura Energética</div>
+        <p class="svc-desc">Subestaciones, centros de transformación, cuadros eléctricos de control y automatización para plantas industriales y polígonos.</p>
+        <a href="#contact" class="svc-link" style="color:var(--clr-blue)">
+          Solicitar info <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Carta especial dark — Electrogasolineras -->
+      <div class="svc-card svc-card--dark svc--green">
+        <div class="flex flex-col sm:flex-row gap-5 items-start">
+          <div class="svc-icon flex-shrink-0" style="background:rgba(0,154,68,.2);color:#00c456">
+            <i class="fas fa-charging-station" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="svc-name">
+              Electrogasolineras — <span style="color:#00c456">Especialidad ATOM</span>
+            </div>
+            <p class="svc-desc">
+              Montaje integral llave en mano de estaciones de recarga ultrarrápida. Ingeniería, obra civil, equipos certificados, legalización y puesta en marcha. Para empresas, gasolineras y municipios.
+            </p>
+            <a href="#electrogasolineras" class="svc-link" style="color:#00c456">
+              Ver sección completa <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ELECTROGASOLINERAS
+     ============================================================ -->
+<section id="electrogasolineras" class="electro-section py-section-lg">
+  <div class="wrap">
+
+    <div class="text-center mb-12">
+      <div class="section-label justify-center">
+        <span class="label-bar" style="background:var(--clr-green)"></span>
+        Nuestra especialidad actual
+      </div>
+      <h2 class="section-h2 mb-4">
+        Electrogasolineras <span style="color:var(--clr-green)">del siglo XXI</span>
+      </h2>
+      <p class="section-lead mx-auto text-center">
+        Montaje e instalación integral de estaciones de recarga ultrarrápida en toda España.
+        Lideramos la transición hacia la movilidad eléctrica sostenible.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- Visual oscuro animado -->
+      <div class="electro-visual order-2 lg:order-1">
+        <div class="ev-rings" aria-hidden="true">
+          <div class="ev-ring"></div>
+          <div class="ev-ring"></div>
+          <div class="ev-ring"></div>
+        </div>
+        <div class="relative z-10 text-center">
+          <i class="fas fa-charging-station ev-main-icon" aria-hidden="true"></i>
+          <div class="font-orbitron font-black text-base tracking-widest mt-4" style="color:var(--clr-green)">
+            ULTRAFAST CHARGING
+          </div>
+          <div class="text-sm mt-1" style="color:rgba(255,255,255,.4)">
+            Hasta 350 kW · CCS2 · CHAdeMO · AC Type 2
+          </div>
+          <div class="flex justify-center gap-2 mt-4 flex-wrap">
+            <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(0,154,68,.15);color:var(--clr-green);border:1px solid rgba(0,154,68,.3)">Llave en mano</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(0,48,135,.2);color:#60a5fa;border:1px solid rgba(96,165,250,.25)">Certificado</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(245,196,0,.15);color:var(--clr-gold);border:1px solid rgba(245,196,0,.3)">MOVES III</span>
+          </div>
+        </div>
+        <div class="ev-badge">
+          <i class="fas fa-circle-check" style="color:var(--clr-green);font-size:.7rem" aria-hidden="true"></i>
+          <span class="ev-badge-text">Instalador autorizado · ABB · Wallbox · IBIL · Circutor</span>
+        </div>
+      </div>
+
+      <!-- Features + CTA -->
+      <div class="order-1 lg:order-2">
+        <div class="ev-feat-grid mb-5">
+          <div class="ev-feat">
+            <div class="ev-feat-icon"><i class="fas fa-bolt-lightning" aria-hidden="true"></i></div>
+            <div class="ev-feat-title">Recarga ultrarrápida</div>
+            <div class="ev-feat-desc">Hasta 350 kW. Carga completa en menos de 15 minutos para la mayoría de vehículos eléctricos del mercado.</div>
+          </div>
+          <div class="ev-feat">
+            <div class="ev-feat-icon"><i class="fas fa-plug-circle-check" aria-hidden="true"></i></div>
+            <div class="ev-feat-title">Multi-estándar</div>
+            <div class="ev-feat-desc">Compatible con CCS2, CHAdeMO y AC. Sin limitaciones de marca ni modelo. Preparado para futuros estándares.</div>
+          </div>
+          <div class="ev-feat">
+            <div class="ev-feat-icon"><i class="fas fa-solar-panel" aria-hidden="true"></i></div>
+            <div class="ev-feat-title">Integración solar FV</div>
+            <div class="ev-feat-desc">Paneles fotovoltaicos + baterías. Reduce el coste energético hasta un 60% y maximiza la rentabilidad del punto de carga.</div>
+          </div>
+          <div class="ev-feat">
+            <div class="ev-feat-icon"><i class="fas fa-wifi" aria-hidden="true"></i></div>
+            <div class="ev-feat-title">Gestión inteligente</div>
+            <div class="ev-feat-desc">Software cloud, monitorización 24/7, facturación automática, mantenimiento predictivo y soporte remoto incluido.</div>
+          </div>
+          <div class="ev-feat">
+            <div class="ev-feat-icon"><i class="fas fa-building-columns" aria-hidden="true"></i></div>
+            <div class="ev-feat-title">Ayudas Plan MOVES III</div>
+            <div class="ev-feat-desc">Tramitamos todas las subvenciones disponibles. Hasta el 70% del coste financiado para empresas y municipios.</div>
+          </div>
+          <div class="ev-feat">
+            <div class="ev-feat-icon"><i class="fas fa-hard-hat" aria-hidden="true"></i></div>
+            <div class="ev-feat-title">Obra civil completa</div>
+            <div class="ev-feat-desc">Canalización, acometida, señalización, conexión a red y legalización ante la distribuidora. Todo incluido.</div>
+          </div>
+        </div>
+
+        <div class="ev-cta-box">
+          <p>
+            ¿Quieres instalar una electrogasolinera en tu empresa, gasolinera o municipio?<br />
+            <strong style="color:var(--tx-1)">Asesoramiento sin compromiso. Gestión completa del proceso.</strong>
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-green">
+              <i class="fas fa-charging-station" aria-hidden="true"></i> Solicitar instalación
+            </a>
+            <a href="tel:+34649757473" class="btn btn-ghost">
+              <i class="fas fa-phone" aria-hidden="true"></i> Llamar ahora
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICACIONES
+     ============================================================ -->
+<section id="certificaciones" class="py-section" style="background:var(--bg-0)">
+  <div class="wrap">
+
+    <div class="text-center mb-12">
+      <div class="section-label justify-center">
+        <span class="label-bar" style="background:var(--clr-blue)"></span>
+        Calidad demostrada
+      </div>
+      <h2 class="section-h2 mb-4">
+        Certificaciones <span style="color:var(--clr-blue)">y acreditaciones</span>
+      </h2>
+      <p class="section-lead mx-auto text-center">
+        Nuestra calidad no es una promesa — es un sistema certificado internacionalmente.<br />
+        Cada proyecto cumple los más altos estándares de la industria.
+      </p>
+    </div>
+
+    <div class="cert-grid">
+
+      <div class="cert-card cert--blue">
+        <div class="cert-badge" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+          <i class="fas fa-medal" aria-hidden="true"></i>
+        </div>
+        <div class="cert-iso">ISO 9001:2015</div>
+        <div class="cert-name">Sistema de Gestión<br />de la Calidad</div>
+        <div class="cert-desc">Garantiza que nuestros procesos, materiales y resultados cumplen estándares de calidad consistentes y verificables en cada proyecto.</div>
+        <div class="cert-ok"><i class="fas fa-circle-check" aria-hidden="true"></i> Certificado vigente</div>
+      </div>
+
+      <div class="cert-card cert--green">
+        <div class="cert-badge" style="background:var(--clr-green-alpha);color:var(--clr-green)">
+          <i class="fas fa-leaf" aria-hidden="true"></i>
+        </div>
+        <div class="cert-iso">ISO 14001:2015</div>
+        <div class="cert-name">Sistema de Gestión<br />Ambiental</div>
+        <div class="cert-desc">Acredita nuestro compromiso con el medio ambiente: reducción de residuos, eficiencia energética y minimización del impacto ambiental.</div>
+        <div class="cert-ok"><i class="fas fa-circle-check" aria-hidden="true"></i> Certificado vigente</div>
+      </div>
+
+      <div class="cert-card cert--red">
+        <div class="cert-badge" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+          <i class="fas fa-bolt" aria-hidden="true"></i>
+        </div>
+        <div class="cert-iso">INST. AUTORIZADO</div>
+        <div class="cert-name">Categoría Especial<br />Alta Tensión</div>
+        <div class="cert-desc">Habilitación oficial del Ministerio de Industria para realizar instalaciones eléctricas de alta y media tensión en todo el territorio nacional.</div>
+        <div class="cert-ok"><i class="fas fa-circle-check" aria-hidden="true"></i> Habilitación vigente</div>
+      </div>
+
+      <div class="cert-card cert--gold">
+        <div class="cert-badge" style="background:var(--clr-gold-alpha);color:var(--clr-gold-dark)">
+          <i class="fas fa-file-shield" aria-hidden="true"></i>
+        </div>
+        <div class="cert-iso">REBT · RD 842/2002</div>
+        <div class="cert-name">Reglamento Electrotécnico<br />Baja Tensión</div>
+        <div class="cert-desc">Cumplimiento pleno del Reglamento Electrotécnico para Baja Tensión y sus Instrucciones Técnicas Complementarias (ITC-BT).</div>
+        <div class="cert-ok"><i class="fas fa-circle-check" aria-hidden="true"></i> Normativa aplicada</div>
+      </div>
+
+    </div>
+
+    <div class="cert-auditors">
+      <p>Auditados y verificados anualmente por organismos de certificación acreditados por ENAC</p>
+      <div class="auditor-badges">
+        <span class="auditor-badge"><i class="fas fa-check-circle" aria-hidden="true"></i> Bureau Veritas</span>
+        <span class="auditor-badge"><i class="fas fa-check-circle" aria-hidden="true"></i> AENOR</span>
+        <span class="auditor-badge"><i class="fas fa-check-circle" aria-hidden="true"></i> SGS</span>
+        <span class="auditor-badge auditor-badge--blue"><i class="fas fa-check-circle" aria-hidden="true"></i> REE Habilitado</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     COMPROMISO MEDIOAMBIENTAL
+     ============================================================ -->
+<section id="medioambiente" class="eco-section py-section-lg">
+  <div class="wrap">
+
+    <div class="text-center mb-12">
+      <div class="section-label justify-center">
+        <span class="label-bar" style="background:var(--clr-green)"></span>
+        ISO 14001 · Sostenibilidad
+      </div>
+      <h2 class="section-h2 mb-4">
+        Compromiso con el <span style="color:var(--clr-green)">Medio Ambiente</span>
+      </h2>
+      <p class="section-lead mx-auto text-center">
+        En ATOM creemos que la electricidad del futuro debe ser limpia, eficiente y responsable.<br />
+        Nuestro sistema de gestión ambiental ISO 14001 lo garantiza.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- Visual eco -->
+      <div class="eco-visual">
+        <i class="fas fa-seedling eco-big-icon" aria-hidden="true"></i>
+        <div class="eco-kpis">
+          <div class="eco-kpi">
+            <div class="eco-kpi-val">-40%</div>
+            <div class="eco-kpi-lbl">CO₂ vs. 2018</div>
+          </div>
+          <div class="eco-kpi">
+            <div class="eco-kpi-val">85%</div>
+            <div class="eco-kpi-lbl">Residuos reciclados</div>
+          </div>
+          <div class="eco-kpi">
+            <div class="eco-kpi-val">50+</div>
+            <div class="eco-kpi-lbl">Estaciones EV</div>
+          </div>
+          <div class="eco-kpi">
+            <div class="eco-kpi-val">0</div>
+            <div class="eco-kpi-lbl">Vertidos ilegales</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pilares -->
+      <div>
+        <p class="section-lead mb-7">
+          Nuestro <strong>Sistema de Gestión Ambiental certificado ISO 14001:2015</strong> nos exige evaluar, controlar y mejorar continuamente el impacto ambiental de todas nuestras actividades.
+        </p>
+
+        <div class="eco-pillars flex flex-col gap-3">
+          <div class="eco-pillar">
+            <div class="eco-pillar-hd">
+              <div class="eco-pillar-icon"><i class="fas fa-bolt-lightning" aria-hidden="true"></i></div>
+              <div class="eco-pillar-title">Movilidad eléctrica sostenible</div>
+            </div>
+            <div class="eco-pillar-desc">Cada electrogasolinera que instalamos contribuye directamente a la reducción de emisiones de CO₂ en el transporte. Un cargador de 150 kW puede facilitar la recarga de hasta 200 vehículos al día.</div>
+          </div>
+          <div class="eco-pillar">
+            <div class="eco-pillar-hd">
+              <div class="eco-pillar-icon"><i class="fas fa-recycle" aria-hidden="true"></i></div>
+              <div class="eco-pillar-title">Gestión responsable de residuos RAEE</div>
+            </div>
+            <div class="eco-pillar-desc">Gestionamos correctamente todos los Residuos de Aparatos Eléctricos y Electrónicos. El 85% de los materiales residuales de nuestras obras se reciclan a través de gestores autorizados.</div>
+          </div>
+          <div class="eco-pillar">
+            <div class="eco-pillar-hd">
+              <div class="eco-pillar-icon"><i class="fas fa-solar-panel" aria-hidden="true"></i></div>
+              <div class="eco-pillar-title">Instalaciones de energía renovable</div>
+            </div>
+            <div class="eco-pillar-desc">Integramos paneles fotovoltaicos, sistemas de almacenamiento y gestión energética inteligente para maximizar el uso de energía renovable en cada proyecto.</div>
+          </div>
+          <div class="eco-pillar">
+            <div class="eco-pillar-hd">
+              <div class="eco-pillar-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+              <div class="eco-pillar-title">Mejora continua certificada</div>
+            </div>
+            <div class="eco-pillar-desc">Objetivos ambientales revisados anualmente con auditorías externas. Reducimos sistemáticamente el consumo de recursos y el impacto de nuestras operaciones.</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mt-6">
+          <span class="eco-badge"><i class="fas fa-certificate" aria-hidden="true"></i> ISO 14001:2015 vigente</span>
+          <span class="eco-badge"><i class="fas fa-leaf" aria-hidden="true"></i> Política ambiental publicada</span>
+          <a href="#contact" class="btn btn-green btn-sm">
+            <i class="fas fa-file-alt" aria-hidden="true"></i> Declaración Ambiental
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CÓMO TRABAJAMOS
+     ============================================================ -->
+<section id="proceso" class="process-section py-section">
+  <div class="wrap">
+
+    <div class="text-center mb-12">
+      <div class="section-label justify-center">
+        <span class="label-bar" style="background:var(--clr-red)"></span>
+        Simple y transparente
+      </div>
+      <h2 class="section-h2 mb-4">Cómo <span style="color:var(--clr-red)">trabajamos</span></h2>
+      <p class="section-lead mx-auto text-center">Sin sorpresas. Sin burocracia. Tres pasos para tener tu instalación lista.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step step-1">
+        <div class="step-num">01</div>
+        <div>
+          <div class="step-title">Nos cuentas tu proyecto</div>
+          <div class="step-desc">Contacta por teléfono, WhatsApp o el formulario. Analizamos tus necesidades y estudiamos la viabilidad técnica y económica sin coste.</div>
+        </div>
+      </div>
+      <div class="process-step step-2">
+        <div class="step-num">02</div>
+        <div>
+          <div class="step-title">Presupuesto personalizado</div>
+          <div class="step-desc">Recibes un presupuesto detallado, desglosado y completamente transparente. Si la instalación es subvencionable, también gestionamos todas las ayudas disponibles.</div>
+        </div>
+      </div>
+      <div class="process-step step-3">
+        <div class="step-num">03</div>
+        <div>
+          <div class="step-title">Ejecución y entrega</div>
+          <div class="step-desc">Ejecutamos con nuestro propio equipo, en los plazos acordados, con todos los estándares de calidad. Entregamos legalizado y funcionando.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contact" class="btn btn-red btn-lg">
+        <i class="fas fa-bolt" aria-hidden="true"></i> Empezar ahora — Es gratis
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO
+     ============================================================ -->
+<section id="portfolio" class="portfolio-section py-section">
+  <div class="wrap">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
+      <div>
+        <div class="section-label">
+          <span class="label-bar" style="background:var(--clr-blue)"></span>
+          Nuestro trabajo
+        </div>
+        <h2 class="section-h2">Proyectos <span style="color:var(--clr-blue)">realizados</span></h2>
+      </div>
+      <p class="section-lead" style="max-width:340px">Instalaciones en toda España que reflejan nuestro compromiso con la calidad y la precisión técnica.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn is-active" data-f="all">Todos</button>
+      <button class="filter-btn" data-f="alta">Alta Tensión</button>
+      <button class="filter-btn" data-f="electro">Electrogasolineras</button>
+      <button class="filter-btn" data-f="urbano">Redes Urbanas</button>
+      <button class="filter-btn" data-f="industrial">Industrial</button>
+    </div>
+
+    <div class="port-grid">
+
+      <div class="port-card" data-c="alta">
+        <div class="port-bg" style="background:linear-gradient(135deg,#0d1b3e,#1a2f6e)">
+          <i class="fas fa-bolt-lightning" style="color:#4f83ff;filter:drop-shadow(0 0 18px rgba(79,131,255,.7))" aria-hidden="true"></i>
+        </div>
+        <div class="port-overlay">
+          <div class="port-cat" style="color:#4f83ff">Alta Tensión</div>
+          <div class="port-name">Línea 132 kV — La Mancha</div>
+          <div class="port-sub">Línea aérea, 8 km · 2023</div>
+        </div>
+      </div>
+
+      <div class="port-card" data-c="electro">
+        <div class="port-bg" style="background:linear-gradient(135deg,#0a1f12,#0d3520)">
+          <i class="fas fa-charging-station" style="color:#00c961;filter:drop-shadow(0 0 22px rgba(0,201,97,.7))" aria-hidden="true"></i>
+        </div>
+        <div class="port-overlay">
+          <div class="port-cat" style="color:#00c961">Electrogasolinera</div>
+          <div class="port-name">Hub de Recarga — Albacete</div>
+          <div class="port-sub">4 cargadores ultrarrápidos 150 kW · 2024</div>
+        </div>
+      </div>
+
+      <div class="port-card" data-c="urbano">
+        <div class="port-bg" style="background:linear-gradient(135deg,#1a0d30,#2e1960)">
+          <i class="fas fa-city" style="color:#a78bfa;filter:drop-shadow(0 0 18px rgba(167,139,250,.6))" aria-hidden="true"></i>
+        </div>
+        <div class="port-overlay">
+          <div class="port-cat" style="color:#a78bfa">Red Urbana</div>
+          <div class="port-name">Red MT/BT — 12.000 hab.</div>
+          <div class="port-sub">Renovación red subterránea · 2022</div>
+        </div>
+      </div>
+
+      <div class="port-card" data-c="electro">
+        <div class="port-bg" style="background:linear-gradient(135deg,#061410,#0c2e20)">
+          <i class="fas fa-gas-pump" style="color:#00d166;filter:drop-shadow(0 0 18px rgba(0,209,102,.6))" aria-hidden="true"></i>
+        </div>
+        <div class="port-overlay">
+          <div class="port-cat" style="color:#00d166">Electrogasolinera</div>
+          <div class="port-name">Estación Autopista A-31</div>
+          <div class="port-sub">8 puntos de carga + solar FV · 2024</div>
+        </div>
+      </div>
+
+      <div class="port-card" data-c="industrial">
+        <div class="port-bg" style="background:linear-gradient(135deg,#1a0808,#3d1010)">
+          <i class="fas fa-industry" style="color:#f87171;filter:drop-shadow(0 0 18px rgba(248,113,113,.6))" aria-hidden="true"></i>
+        </div>
+        <div class="port-overlay">
+          <div class="port-cat" style="color:#f87171">Industrial</div>
+          <div class="port-name">Centro Logístico — Toledo</div>
+          <div class="port-sub">Instalación eléctrica 15.000 m² · 2023</div>
+        </div>
+      </div>
+
+      <div class="port-card" data-c="alta">
+        <div class="port-bg" style="background:linear-gradient(135deg,#080d20,#101a40)">
+          <i class="fas fa-tower-broadcast" style="color:#60c8f7;filter:drop-shadow(0 0 18px rgba(96,200,247,.6))" aria-hidden="true"></i>
+        </div>
+        <div class="port-overlay">
+          <div class="port-cat" style="color:#60c8f7">Alta Tensión</div>
+          <div class="port-name">Subestación 66/20 kV — Murcia</div>
+          <div class="port-sub">Construcción y puesta en servicio · 2022</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="#contact" class="btn btn-ghost" style="padding:.85rem 2.5rem">
+        ¿Tienes un proyecto similar? Cuéntanoslo
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section id="contact" class="contact-section py-section-lg">
+  <div class="wrap">
+
+    <div class="text-center mb-12">
+      <div class="section-label justify-center">
+        <span class="label-bar" style="background:var(--clr-red)"></span>
+        Hablemos
+      </div>
+      <h2 class="section-h2 mb-4">
+        Solicita tu <span style="color:var(--clr-red)">presupuesto gratuito</span>
+      </h2>
+      <p class="section-lead mx-auto text-center">
+        Sin compromiso · Atención personalizada · Cobertura en toda España
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-10">
+
+      <!-- Formulario -->
+      <div class="lg:col-span-3">
+        <div class="contact-card">
+          <h3 class="font-semibold text-lg mb-6" style="color:var(--tx-1)">Envíanos tu consulta</h3>
+
+          <form id="contact-form" novalidate>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="form-label" for="f-nombre">Nombre y apellidos *</label>
+                <input id="f-nombre" name="nombre" type="text"
+                  class="form-field" placeholder="Tu nombre completo"
+                  required autocomplete="name" />
+              </div>
+              <div>
+                <label class="form-label" for="f-empresa">Empresa / Organismo</label>
+                <input id="f-empresa" name="empresa" type="text"
+                  class="form-field" placeholder="Nombre de tu empresa"
+                  autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 mt-4">
+              <div>
+                <label class="form-label" for="f-email">Email *</label>
+                <input id="f-email" name="email" type="email"
+                  class="form-field" placeholder="correo@empresa.com"
+                  required autocomplete="email" />
+              </div>
+              <div>
+                <label class="form-label" for="f-telefono">Teléfono</label>
+                <input id="f-telefono" name="telefono" type="tel"
+                  class="form-field" placeholder="+34 600 000 000"
+                  autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label class="form-label" for="f-servicio">Servicio de interés</label>
+              <select id="f-servicio" name="servicio" class="form-field">
+                <option value="">Selecciona un servicio...</option>
+                <option>Electrogasolinera / Puntos de recarga VE</option>
+                <option>Líneas de alta tensión</option>
+                <option>Instalaciones urbanas MT/BT</option>
+                <option>Fibra óptica</option>
+                <option>Mantenimiento eléctrico</option>
+                <option>Infraestructura energética industrial</option>
+                <option>Otro proyecto eléctrico</option>
+              </select>
+            </div>
+
+            <div class="mt-4">
+              <label class="form-label" for="f-mensaje">Cuéntanos tu proyecto *</label>
+              <textarea id="f-mensaje" name="mensaje" class="form-field"
+                placeholder="Describe tu proyecto: tipo de instalación, ubicación, potencia aproximada y plazos..."
+                required></textarea>
+            </div>
+
+            <!-- GDPR/LOPD — obligatorio por ley en España -->
+            <div class="form-gdpr mt-4">
+              <input type="checkbox" id="gdpr" name="gdpr" />
+              <label for="gdpr">
+                He leído y acepto la <a href="/politica-privacidad" target="_blank" rel="noopener">Política de Privacidad</a>.
+                Consiento el tratamiento de mis datos para recibir información sobre los servicios de Montajes Industriales ATOM,
+                conforme al RGPD y la LOPD. *
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-red btn-block submit-btn mt-5" style="border-radius:var(--r-md);padding:.9rem">
+              <i class="fas fa-bolt" aria-hidden="true"></i>
+              Solicitar Presupuesto Gratuito
+            </button>
+
+            <p class="form-privacy">
+              🔒 Tus datos están seguros. Solo los usamos para responderte.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info de contacto -->
+      <div class="lg:col-span-2 contact-info flex flex-col gap-4">
+        <h3 class="font-semibold text-base" style="color:var(--tx-1)">Datos de contacto</h3>
+
+        <div class="ci-card">
+          <div class="ci-icon" style="background:var(--clr-red-alpha);color:var(--clr-red)">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="ci-label">Teléfono directo</div>
+            <div class="ci-value"><a href="tel:+34649757473">649 757 473</a></div>
+          </div>
+        </div>
+
+        <div class="ci-card">
+          <div class="ci-icon" style="background:var(--clr-blue-alpha);color:var(--clr-blue)">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="ci-label">Email</div>
+            <div class="ci-value">
+              <a href="mailto:electrotex@electrotex.es">electrotex@electrotex.es</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-card">
+          <div class="ci-icon" style="background:var(--clr-green-alpha);color:var(--clr-green)">
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="ci-label">Sede central</div>
+            <div class="ci-value">
+              Vallejo Hondo, 4<br />
+              02611 Ossa de Montiel, Albacete
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-card">
+          <div class="ci-icon" style="background:rgba(37,211,102,.1);color:#25D366">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="ci-label">WhatsApp</div>
+            <div class="ci-value">
+              <a href="https://wa.me/34649757473" target="_blank" rel="noopener noreferrer">
+                Escríbenos directamente →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-card">
+          <div class="ci-icon" style="background:var(--clr-gold-alpha);color:var(--clr-gold-dark)">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+          </div>
+          <div>
+            <div class="ci-label">Horario de atención</div>
+            <div class="ci-value">
+              Lun–Vie 8:00 – 18:00 h<br />
+              <span style="color:var(--clr-green);font-size:var(--fz-xs)">Urgencias 24/7 para clientes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa Google Maps -->
+        <div class="map-box">
+          <iframe
+            src="https://maps.google.com/maps?q=Vallejo+Hondo+4,+Ossa+de+Montiel,+Albacete&output=embed&z=14"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Montajes Industriales ATOM — Ossa de Montiel, Albacete"
+          ></iframe>
+        </div>
+
+        <!-- Acciones rápidas -->
+        <div class="quick-actions">
+          <a href="tel:+34649757473" class="btn btn-red">
+            <i class="fas fa-phone" aria-hidden="true"></i> Llamar
+          </a>
+          <a href="https://wa.me/34649757473" target="_blank" rel="noopener noreferrer" class="btn btn-green">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+          </a>
+          <a href="mailto:electrotex@electrotex.es" class="btn btn-ghost">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Email
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-grid">
+
+      <!-- Columna marca -->
+      <div>
+        <img src="logo.png" class="footer-logo" alt="Montajes Industriales ATOM" />
+        <p class="footer-desc">
+          Montajes Industriales ATOM. Especialistas en electricidad industrial, alta tensión y electrogasolineras en España.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="LinkedIn ATOM">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Instagram ATOM">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="footer-iso-tags">
+          <span class="footer-iso-tag footer-iso-tag--blue">ISO 9001</span>
+          <span class="footer-iso-tag footer-iso-tag--green">ISO 14001</span>
+        </div>
+      </div>
+
+      <!-- Columna servicios -->
+      <div>
+        <div class="footer-col-title">Servicios</div>
+        <nav class="footer-links" aria-label="Links de servicios">
+          <a href="#services"           class="footer-link">Líneas de alta tensión</a>
+          <a href="#services"           class="footer-link">Instalaciones urbanas MT/BT</a>
+          <a href="#electrogasolineras" class="footer-link">Electrogasolineras</a>
+          <a href="#services"           class="footer-link">Fibra óptica</a>
+          <a href="#services"           class="footer-link">Mantenimiento eléctrico</a>
+          <a href="#services"           class="footer-link">Infraestructura energética</a>
+        </nav>
+      </div>
+
+      <!-- Columna empresa + contacto -->
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <nav class="footer-links mb-5" aria-label="Links de empresa">
+          <a href="#about"           class="footer-link">Sobre nosotros</a>
+          <a href="#certificaciones" class="footer-link">Certificaciones ISO</a>
+          <a href="#medioambiente"   class="footer-link">Medio ambiente</a>
+          <a href="#proceso"         class="footer-link">Cómo trabajamos</a>
+          <a href="#contact"         class="footer-link">Solicitar presupuesto</a>
+        </nav>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-links">
+          <a href="tel:+34649757473" class="footer-contact-link">
+            <i class="fas fa-phone footer-contact-icon" aria-hidden="true"></i> 649 757 473
+          </a>
+          <a href="mailto:electrotex@electrotex.es" class="footer-contact-link">
+            <i class="fas fa-envelope footer-contact-icon" aria-hidden="true"></i> electrotex@electrotex.es
+          </a>
+          <address class="footer-address" style="font-style:normal">
+            <i class="fas fa-location-dot footer-contact-icon" aria-hidden="true"></i>
+            Vallejo Hondo, 4 · 02611 Ossa de Montiel, Albacete
+          </address>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2024 Montajes Industriales ATOM · Todos los derechos reservados ·
+        <a href="/politica-privacidad">Política de privacidad</a>
+      </p>
+      <!-- Franja de colores del logotipo -->
+      <div class="footer-stripe" aria-hidden="true">
+        <span style="background:var(--clr-red)"></span>
+        <span style="background:var(--clr-blue)"></span>
+        <span style="background:var(--clr-green)"></span>
+        <span style="background:var(--clr-gold)"></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ============================================================
+     BOTONES FLOTANTES
+     ============================================================ -->
+<a id="whatsapp-btn"
+   href="https://wa.me/34649757473"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+  <div class="wa-pulse" aria-hidden="true"></div>
+  <i class="fab fa-whatsapp" style="position:relative;z-index:1" aria-hidden="true"></i>
+</a>
+
+<a id="back-top" href="#hero" aria-label="Volver al inicio de la página">
+  <i class="fas fa-chevron-up" aria-hidden="true"></i>
+</a>
+
+<!-- ============================================================
+     SCRIPTS — defer garantiza orden y no bloquea el render
+     ============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"          defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
