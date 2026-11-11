@@ -58,27 +58,32 @@
     });
 
     var lines = [
-      { dx: -52, y: 96,  color: '#F5C400', t: 7,  dl: 0 },
-      { dx:  52, y: 96,  color: '#ff4d57', t: 9,  dl: 2.5 },
-      { dx: -40, y: 132, color: '#3fd17a', t: 8,  dl: 1.2 },
-      { dx:  40, y: 132, color: '#6ea8ff', t: 10, dl: 4 }
+      { dx: -52, y: 96,  color: '#F5C400', t: 4.5 },
+      { dx:  52, y: 96,  color: '#ff3b47', t: 5.5 },
+      { dx: -40, y: 132, color: '#2fe07a', t: 5 },
+      { dx:  40, y: 132, color: '#5aa0ff', t: 6 }
     ];
     lines.forEach(function (l, i) {
       var d = cablePath(l.dx, l.y);
       var cable = el('path', { d: d, class: 'cable', pathLength: 1 });
       cable.style.transitionDelay = (0.5 + i * 0.12) + 's';
       svg.appendChild(cable);
-      var pulse = el('path', { d: d, class: 'pulse', pathLength: 1, stroke: l.color });
-      pulse.style.setProperty('--t', l.t + 's');
-      pulse.style.setProperty('--dl', l.dl + 's');
-      svg.appendChild(pulse);
+      /* dos impulsos por cable, cada uno con halo + núcleo brillante */
+      [0, 0.5].forEach(function (phase) {
+        ['pulse pulse-glow', 'pulse'].forEach(function (cls) {
+          var p = el('path', { d: d, class: cls, pathLength: 1, stroke: l.color });
+          p.style.setProperty('--t', l.t + 's');
+          p.style.setProperty('--dl', (-(phase + i * 0.17) * l.t).toFixed(2) + 's');
+          svg.appendChild(p);
+        });
+      });
     });
 
     box.appendChild(svg);
     requestAnimationFrame(function () {
       requestAnimationFrame(function () { box.classList.add('is-on'); });
     });
-    if (!reduce) setTimeout(function () { box.classList.add('is-live'); }, 2800);
+    if (!reduce) setTimeout(function () { box.classList.add('is-live'); }, 1500);
   })();
 
   /* ── Contadores ──────────────────────────────────────────── */

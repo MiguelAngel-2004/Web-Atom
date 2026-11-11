@@ -343,10 +343,12 @@ p { margin: 0 0 1em; }
 .hero-line .ground { stroke: rgba(255,255,255,.18); stroke-width: 1; }
 .hero-line .tower { fill: none; stroke: rgba(255,255,255,.3); stroke-width: 1.4; stroke-linejoin: round;
   opacity: 0; transform: translateY(14px); transition: opacity .8s ease, transform .8s ease; }
-.hero-line .cable { fill: none; stroke: rgba(255,255,255,.3); stroke-width: 1;
+.hero-line .cable { fill: none; stroke: rgba(255,255,255,.38); stroke-width: 1.2;
   stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 2.2s cubic-bezier(.6,0,.2,1); }
-.hero-line .pulse { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: .035 .965; stroke-dashoffset: 1;
-  opacity: 0; }
+.hero-line .pulse { fill: none; stroke-width: 3; stroke-linecap: round; stroke-dasharray: .05 .95; stroke-dashoffset: 1;
+  opacity: 0; transition: opacity .6s ease; }
+.hero-line .pulse-glow { stroke-width: 9; }
+.hero-line.is-live .pulse-glow { opacity: .28; }
 .hero-line.is-on .tower { opacity: 1; transform: none; }
 .hero-line.is-on .cable { stroke-dashoffset: 0; }
 .hero-line.is-live .pulse { opacity: 1; animation: flow var(--t, 6s) linear infinite; animation-delay: var(--dl, 0s); }
@@ -435,4 +437,132 @@ p { margin: 0 0 1em; }
   .header, .charge-fill { transition: none; }
   .charge.is-in .charge-fill { animation: none; }
   .section h2::after { transform: none; transition: none; }
+}
+
+/* ════════════════════════════════════════════════
+   Colores del logo en más elementos
+   ════════════════════════════════════════════════ */
+
+/* Portada: cifras con color */
+.hero-facts > div:nth-child(1) dd { color: var(--gold); }
+.hero-facts > div:nth-child(2) dd { color: #ff4d57; }
+.hero-facts > div:nth-child(3) dd { color: #2fe07a; }
+.hero-facts > div:nth-child(4) dd { color: #8db8ff; }
+
+/* Servicios: borde de color siempre visible y número en círculo */
+.services li::before { transform: scaleX(.18); }
+.services li:hover::before { transform: scaleX(1); }
+.services li:hover { background: linear-gradient(180deg, rgba(0,0,0,.02), transparent 60%); }
+.services .num {
+  display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+  background: var(--c, var(--red)); color: #fff !important; font-size: 15px; margin-bottom: 14px;
+}
+.services li[style*="gold"] .num { background: var(--gold); color: var(--navy) !important; }
+
+/* Recarga en verde oscuro */
+.section-green {
+  background-color: #06341f;
+  background-image: radial-gradient(circle at 85% 20%, rgba(47,224,122,.14), transparent 45%);
+}
+.section-green .kicker-light { color: #ffd84a; }
+.section-green .lead-light, .section-green .checklist li { color: #c5e3d1; }
+.section-green .checklist li::before { border-color: var(--gold); }
+.section-green .charge { background: rgba(0,0,0,.18); border-color: rgba(255,255,255,.16); }
+.section-green h2::after { background: var(--gold); }
+
+/* Obras: línea de cabecera roja */
+.works th { border-bottom-color: var(--red); }
+
+/* La empresa: fondo con un toque verde y pasos de colores */
+.section-alt { background: #f1f6f2; }
+.steps li:nth-child(1)::before { border-color: var(--red);   color: var(--red); }
+.steps li:nth-child(2)::before { border-color: var(--blue);  color: var(--blue); }
+.steps li:nth-child(3)::before { border-color: var(--green); color: var(--green); }
+.credentials { border-top-color: var(--green); }
+.credentials li { padding-left: 18px; position: relative; }
+.credentials li::before { content: ""; position: absolute; left: 0; top: 22px; width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
+.credentials li:first-child::before { top: 8px; }
+.credentials li:nth-child(1)::before { background: var(--red); }
+.credentials li:nth-child(2)::before { background: var(--blue); }
+.credentials li:nth-child(3)::before { background: var(--gold); }
+
+/* Contacto: etiquetas en color */
+.contact-list li:nth-child(1) span { color: var(--red); }
+.contact-list li:nth-child(2) span { color: var(--green); }
+.contact-list li:nth-child(3) span { color: var(--blue); }
+
+/* Pie con la franja del logo arriba */
+.footer { padding-top: 0; }
+.footer .brand-stripe { margin-bottom: 56px; }
+.footer-name { color: #fff; }
+
+/* ════════════════════════════════════════════════
+   Móvil
+   ════════════════════════════════════════════════ */
+.mobile-bar { display: none; }
+
+@media (max-width: 760px) {
+  body { font-size: 16px; padding-bottom: 64px; }
+
+  /* barra fija de contacto */
+  .mobile-bar {
+    display: grid; grid-template-columns: 1fr 1fr;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    box-shadow: 0 -2px 12px rgba(0,0,0,.15);
+  }
+  .mobile-bar a {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    height: 56px; color: #fff; font-weight: 600; font-size: 17px; text-decoration: none;
+  }
+  .mobile-bar .mb-call { background: var(--red); }
+  .mobile-bar .mb-wa   { background: #1fa855; }
+  .mobile-bar a:hover  { color: #fff; }
+  .wa-float { display: none; }
+
+  /* portada más compacta */
+  .hero-grid { padding-top: 40px; padding-bottom: 130px; gap: 32px; }
+  .hero h1 { font-size: 2.1rem; }
+  .hero-lead { font-size: 16px; margin-bottom: 24px; }
+  .hero-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hero-actions .btn { padding: 13px 10px; text-align: center; font-size: 15px; }
+  .hero-actions .arr { display: none; }
+  .hero .kicker { font-size: 12px; letter-spacing: .06em; }
+  .hero-facts dd { font-size: 34px; }
+  .hero-facts .dd-sm { font-size: 20px; }
+  .hero-facts > div { padding: 16px 0 14px; }
+  .hero-facts > div:nth-child(even) { padding-left: 16px; }
+  .hero-line { height: 140px; }
+
+  /* servicios como tarjetas con borde de color */
+  .services { gap: 12px; }
+  .services li:nth-child(n) {
+    padding: 20px 18px; border: 1px solid var(--line); border-left: 4px solid var(--c, var(--red));
+  }
+  .services li::before { display: none; }
+  .services li[style*="gold"]:nth-child(n) { border-left-color: var(--gold); }
+  .services .num { width: 28px; height: 28px; font-size: 13px; margin-bottom: 8px; }
+  .services h3 { font-size: 22px; }
+
+  .section-head { margin-bottom: 28px; }
+  .section h2 { font-size: 1.9rem; }
+
+  /* obras como tarjetas */
+  .works tr { padding: 16px 0 16px 14px; border-left: 3px solid var(--line); margin-bottom: 4px; }
+  .works tr:has(.tag-ve)  { border-left-color: var(--green); }
+  .works tr:has(.tag-at)  { border-left-color: var(--blue); }
+  .works tr:has(.tag-ind) { border-left-color: var(--red); }
+  .works tr:has(.tag-red) { border-left-color: var(--gold); }
+
+  .charge { padding: 18px; }
+  .charge-pct { font-size: 32px; }
+  .charge-top { font-size: 12px; }
+
+  .credentials { padding: 22px 18px; }
+  .contact-list li { grid-template-columns: 90px 1fr; }
+
+  .cta-text strong { font-size: 26px; }
+  .cta-text { font-size: 17px; }
+  .cta-phone { font-size: 30px; }
+
+  .footer .brand-stripe { margin-bottom: 36px; }
 }
